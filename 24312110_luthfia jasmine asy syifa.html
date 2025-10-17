@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wisata Indonesia</title>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+    }
+    /* Header dengan background image */
+    header {
+      position: relative;
+      height: 300px; /* bisa diubah sesuai kebutuhan */
+      background: url("https://www.bbc.com/indonesia/majalah/2015/07/150709_trensosial_ugc_alam2") no-repeat center center;
+      background-size: cover;
+      color: rgb(255, 208, 0);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* overlay agar teks terbaca di atas gambar */
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(255, 249, 198);
+      /* semi-transparan hitam overlay */
+    }
+    header h1, header p {
+      position: relative; /* agar berada di atas overlay */
+      margin: 0;
+      padding: 0 20px;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      background-color: #462d00;
+    }
+    .navbar a {
+      color: 
+    rgb(255, 255, 255);
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #b18e44;
+      color: rgb(255, 255, 255);
+    }
+    /* Container utama */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .side {
+      flex: 30%;
+      background-color: #b18e44;
+      padding: 20px;
+    }
+    .main {
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #462d00;
+    }
+    @media screen and (max-width: 700px) {
+      .container, .navbar {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div style="background:#462d00;padding:5px;text-align:center;">
+    <h4> Selamat Datang di Wisata Indonesia!</h4>
+  </div>
+
+  <!-- Header dengan gambar -->
+  <header>
+    <h1>Wisata Indonesia</h1>
+    <p>Menjelajahi keindahan alam dan budaya Nusantara</p>
+  </header>
+
+  <div class="navbar">
+    <a href="#">Beranda</a>
+    <a href="#">Destinasi</a>
+    <a href="#">Kuliner</a>
+    <a href="#">Kontak</a>
+  </div>
+
+  <div class="container">
+    <div class="side">
+      <h2>Luthfia Jasmine</h2>
+      <h5>Penjelajah Nusantara</h5>
+      <img src="human.png" alt="Traveling Indonesia">
+      <p>Saya pecinta alam dan budaya Indonesia, suka berpetualang dari Sabang sampai Merauke.</p>
+      <h3>Tempat Favorit</h3>
+      <p>Beberapa destinasi yang wajib dikunjungi:</p>
+      <img src="lampung.jpg" alt="Pantai Bali">
+      <img src="plg.jpg" alt="Borobudur">
+      <img src="hi.jpg" alt="Gunung Bromo">
+    </div>
+
+    <div class="main">
+      <h2>Pulau Bali</h2>
+      <h5>Surga Tropis Indonesia, Okt 2025</h5>
+      <img src="la-plancha.webp" alt="Bali Beach">
+      <p>Bali terkenal di seluruh dunia dengan pantainya yang indah, budaya Hindu yang kaya, dan keramahan penduduk lokal.</p>
+      <p>Dari Ubud hingga Kuta, setiap sudut Bali menawarkan pengalaman berbeda. Jangan lupa mencoba kuliner lokal seperti babi guling dan lawar!</p>
+
+      <br>
+
+      <h2>Candi Borobudur</h2>
+      <h5>Magelang, Jawa Tengah – Sep 2025</h5>
+      <img src="candi.jpg" alt="Candi Borobudur">
+      <p>Candi Borobudur adalah candi Buddha terbesar di dunia, warisan budaya UNESCO yang menjadi simbol kebanggaan Indonesia.</p>
+      <p>Setiap relief di dinding candi menggambarkan ajaran Buddha dan kehidupan masyarakat kuno. Pemandangan matahari terbit di puncak candi sungguh menakjubkan.</p>
+
+      <br>
+
+      <h2>Gunung Bromo</h2>
+      <h5>Jawa Timur – Agu 2025</h5>
+      <img src="bromoh.jpeg" alt="Gunung Bromo">
+      <p>Gunung Bromo adalah salah satu gunung berapi paling terkenal di Indonesia. Pemandangan matahari terbit di Penanjakan adalah pengalaman yang tak terlupakan.</p>
+      <p>Selain itu, padang pasir luas di sekitar kawah memberikan nuansa seperti berada di planet lain.</p>
+    </div>
+  </div>
+
+  <footer>
+    <h2>© 2025 Wisata Indonesia | Jelajahi Keindahan Negeri</h2>
+  </footer>
+
+</body>
+</html>
